@@ -135,10 +135,8 @@ syntax enable
 " Set regular expression engine automatically
 set regexpengine=0
 
-" Enable 256 colors palette in Gnome Terminal
-if $COLORTERM == 'xterm-256color'
-    set t_Co=256
-endif
+" For true-color terminals
+set termguicolors
 
 try
     colorscheme desert
