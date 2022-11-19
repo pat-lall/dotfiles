@@ -42,6 +42,7 @@ call plug#begin()
 "
 Plug 'lifepillar/vim-solarized8'                  " Solarized colorscheme
 Plug 'tpope/vim-fugitive'                         " Git
+Plug 'airblade/vim-gitgutter'                     " Show git status in sign col
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
@@ -74,6 +75,10 @@ nmap <leader>w :w!<cr>
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+
+" Reduce update time for vim-gitgutter
+" default updatetime 4000ms is not good for async update
+set updatetime=100
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
