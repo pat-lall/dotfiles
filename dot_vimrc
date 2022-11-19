@@ -43,14 +43,15 @@ call plug#begin()
 Plug 'lifepillar/vim-solarized8'                  " Solarized colorscheme
 Plug 'tpope/vim-fugitive'                         " Git
 Plug 'airblade/vim-gitgutter'                     " Show git status in sign col
+Plug 'vim-airline/vim-airline'                    " Status line
+Plug 'vim-airline/vim-airline-themes'             " Airline themes
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
-" You can revert the settings after the call like so:
-"   filetype indent off   " Disable file-type-specific indentation
-"   syntax off            " Disable syntax highlighting
-
+" Plugin-specific settings
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Section: General
@@ -285,10 +286,10 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " Section: Status line
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Always show the status line
-set laststatus=2
+" set laststatus=2
 
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
