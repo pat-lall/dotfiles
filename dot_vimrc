@@ -45,6 +45,7 @@ Plug 'tpope/vim-fugitive'                         " Git
 Plug 'airblade/vim-gitgutter'                     " Show git status in sign col
 Plug 'vim-airline/vim-airline'                    " Status line
 Plug 'vim-airline/vim-airline-themes'             " Airline themes
+Plug 'tpope/vim-commentary'                       " Commenting tool
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
