@@ -40,8 +40,8 @@ call plug#begin()
 "   - Vim (Windows): '~/vimfiles/plugged'
 "   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
 "
-Plug 'junegunn/fzf'
-Plug 'lifepillar/vim-solarized8'
+Plug 'lifepillar/vim-solarized8'                  " Solarized colorscheme
+Plug 'tpope/vim-fugitive'                         " Git
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
