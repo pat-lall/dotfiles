@@ -46,26 +46,25 @@ Plug 'airblade/vim-gitgutter'                     " Show git status in sign col
 Plug 'vim-airline/vim-airline'                    " Status line
 Plug 'vim-airline/vim-airline-themes'             " Airline themes
 Plug 'tpope/vim-commentary'                       " Commenting tool
-" Temporary use of dev branch to get operator indent
-" Plug 'vhda/verilog_systemverilog.vim'             " SystemVerilog 'sugar'
-Plug 'vhda/verilog_systemverilog.vim', { 'branch': 'indent/indent_assign_on_symbol' } " SystemVerilog 'sugar'
+Plug 'vhda/verilog_systemverilog.vim'             " SystemVerilog 'sugar'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
 
+
 " Plugin-specific settings
+"""""""""""""""""""""""""""
 
 " airline
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 
 " verilog_systemverilog
-let g:verilog_syntax_fold_lst = "all"
-set foldmethod=syntax
-runtime macros/matchit.vim
-" Temporary use of dev branch to get operator indent
 let g:verilog_indent_assign_on_symbol=1
+" let g:verilog_syntax_fold_lst = "all"
+" set foldmethod=syntax
+runtime macros/matchit.vim
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
