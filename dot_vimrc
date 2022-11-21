@@ -39,15 +39,17 @@ call plug#begin()
 "   - Vim (Windows): '~/vimfiles/plugged'
 "   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
 "
-Plug 'lifepillar/vim-solarized8'                  " Solarized colorscheme
-Plug 'tpope/vim-fugitive'                         " Git
-Plug 'airblade/vim-gitgutter'                     " Show git status in sign col
-Plug 'vim-airline/vim-airline'                    " Status line
-Plug 'vim-airline/vim-airline-themes'             " Airline themes
-Plug 'edkolev/tmuxline.vim'                       " tmux statusline generator
-Plug 'tpope/vim-commentary'                       " Commenting tool
-Plug 'vhda/verilog_systemverilog.vim'             " SystemVerilog 'sugar'
-Plug 'christoomey/vim-tmux-navigator'             " tmux/vim seamless navigation
+Plug 'lifepillar/vim-solarized8'                      " Solarized colorscheme
+Plug 'tpope/vim-fugitive'                             " Git
+Plug 'airblade/vim-gitgutter'                         " Show git status in sign col
+Plug 'vim-airline/vim-airline'                        " Status line
+Plug 'vim-airline/vim-airline-themes'                 " Airline themes
+Plug 'edkolev/tmuxline.vim'                           " tmux statusline generator
+Plug 'tpope/vim-commentary'                           " Commenting tool
+Plug 'vhda/verilog_systemverilog.vim'                 " SystemVerilog 'sugar'
+Plug 'christoomey/vim-tmux-navigator'                 " tmux/vim seamless navigation
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }   " fzf fuzzy finder w/ install
+Plug 'junegunn/fzf.vim'                               " fzf fuzzy finder helper
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
