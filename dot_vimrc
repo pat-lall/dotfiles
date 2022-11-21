@@ -48,6 +48,7 @@ Plug 'vim-airline/vim-airline-themes'             " Airline themes
 Plug 'edkolev/tmuxline.vim'                       " tmux statusline generator
 Plug 'tpope/vim-commentary'                       " Commenting tool
 Plug 'vhda/verilog_systemverilog.vim'             " SystemVerilog 'sugar'
+Plug 'christoomey/vim-tmux-navigator'             " tmux/vim seamless navigation
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
