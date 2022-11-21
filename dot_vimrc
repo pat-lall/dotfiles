@@ -5,14 +5,13 @@
 "   - General
 "   - VIM user interface
 "   - Colors and Fonts
+"   - netrw (:Explore) setup
 "   - Files and backups
 "   - Text, tab and indent related
 "   - Visual mode related
 "   - Moving around, tabs and buffers
 "   - Status line
 "   - Editing mappings
-"   - vimgrep searching and cope displaying
-"   - Spell checking
 "   - Misc
 "   - Helper functions
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -214,6 +213,20 @@ set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Section: netrw (:Explore) setup
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+" augroup ProjectDrawer
+"   autocmd!
+"   autocmd VimEnter * :Vexplore
+" augroup END
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
