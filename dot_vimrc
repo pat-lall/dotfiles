@@ -20,8 +20,8 @@
 " Section: Preserve default settings (unless explicitly overridden below)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Source default vimrc file.
-unlet! skip_defaults_vim
-source $VIMRUNTIME/defaults.vim
+" unlet! skip_defaults_vim
+" source $VIMRUNTIME/defaults.vim
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -48,7 +48,7 @@ Plug 'edkolev/tmuxline.vim'                           " tmux statusline generato
 Plug 'tpope/vim-commentary'                           " Commenting tool
 Plug 'vhda/verilog_systemverilog.vim'                 " SystemVerilog 'sugar'
 Plug 'christoomey/vim-tmux-navigator'                 " tmux/vim seamless navigation
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }   " fzf fuzzy finder w/ install
+Plug 'junegunn/fzf'                                   " fzf fuzzy finder
 Plug 'junegunn/fzf.vim'                               " fzf fuzzy finder helper
 
 " Initialize plugin system
